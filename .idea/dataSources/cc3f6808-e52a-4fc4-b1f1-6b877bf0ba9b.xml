@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="@localhost">
+<dataSource name="ems@localhost">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.51">
     <root id="1">
       <DefaultCasing>mixed/mixed</DefaultCasing>
@@ -996,6 +996,8 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Charset>utf8mb4</Charset>
     </collation>
     <schema id="288" parent="1" name="ems">
+      <Current>1</Current>
+      <LastIntrospectionLocalTimestamp>2024-01-09.12:23:44</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="289" parent="1" name="information_schema">
@@ -1029,5 +1031,184 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
+    <table id="297" parent="288" name="attendees_lakshmi">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="298" parent="288" name="event_lakshmi">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="299" parent="288" name="inventory_lakshmi">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="300" parent="288" name="staff_lakshmi">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="301" parent="288" name="transport_lakshmi">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="302" parent="288" name="users">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="303" parent="288" name="venue_lakshmi">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="304" parent="297" name="Event ID">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="305" parent="297" name="Attendee Name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="306" parent="297" name="Attendee Email">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="307" parent="297" name="Attendee Phone Number">
+      <DasType>bigint|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="308" parent="298" name="Event ID">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="309" parent="298" name="Event Name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="310" parent="298" name="Event Date">
+      <DasType>date|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="311" parent="298" name="Event Start Time">
+      <DasType>time|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="312" parent="298" name="Event End Time">
+      <DasType>time|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="313" parent="298" name="Event Location">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <column id="314" parent="298" name="Event Description">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <column id="315" parent="298" name="Event Type">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>8</Position>
+    </column>
+    <column id="316" parent="298" name="Event Status">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>9</Position>
+    </column>
+    <column id="317" parent="298" name="Event Max Capacity">
+      <DasType>int|0s</DasType>
+      <Position>10</Position>
+    </column>
+    <column id="318" parent="298" name="Event Ticket Price">
+      <DasType>int|0s</DasType>
+      <Position>11</Position>
+    </column>
+    <index id="319" parent="298" name="PRIMARY">
+      <ColNames>Event ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="320" parent="298" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="321" parent="299" name="Event ID">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="322" parent="299" name="Item Name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="323" parent="299" name="Quantity">
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="324" parent="299" name="Availability">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="325" parent="300" name="Event ID">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="326" parent="300" name="Staff Name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="327" parent="300" name="Staff Role">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="328" parent="300" name="Staff Contact">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="329" parent="301" name="Event ID">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="330" parent="301" name="Vehicle Name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="331" parent="301" name="Route">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="332" parent="301" name="Schedule">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="333" parent="301" name="Driver Name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="334" parent="302" name="username">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="335" parent="302" name="password">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="336" parent="303" name="Event ID">
+      <DasType>int|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="337" parent="303" name="Venue Name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="338" parent="303" name="Venue Address">
+      <DasType>varchar(1000)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="339" parent="303" name="Capacity">
+      <DasType>int|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="340" parent="303" name="Availability">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>5</Position>
+    </column>
   </database-model>
 </dataSource>

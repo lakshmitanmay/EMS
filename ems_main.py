@@ -13,7 +13,7 @@ mycon = my.connect(host='localhost', user='root', password='admin*6798', databas
 if not mycon.is_connected():
     print("Error connecting to MySQL database.")
 cursor = mycon.cursor()
-sql_query = "create table users (username varchar(255), password varchar(255))"
+sql_query = "create table if not exists users (username varchar(255), password varchar(255))"
 cursor.execute(sql_query)
 mycon.commit()
 
