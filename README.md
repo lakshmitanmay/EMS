@@ -67,9 +67,34 @@ My project has 5 basic objectives.
 - Optimize resource allocation and automate manual processes to reduce costs and save time.
 - Minimize administrative overheads and improve operational efficiency to maximize resource utilization.
 
-## **_Modules Used_**
+## ***Modules Used***
 1. Random Module
 2. MySQL.connector module
+
+
+## **_Limitations_**:
+
+1. Not made for large businesses
+
+2. Limited Number of events are possible to be stored
+
+3. Password functionality isn’t very secure; it has no encryption.
+
+4. Limited number of things can be stored regarding each event.
+
+5. UX is good but pretty subpar UI.
+
+## **_Future scope:_**
+
+1. Adaptable for large businesses
+
+2. Unlimited number of events can be stored.
+
+3. Adding encryption to passwords.
+
+4. Ability to change and add what things can be stored regarding each event.
+
+5. Make the Python based interface more focused on UI.
 ## **_Conclusion_**
 
 In the end, all I would like to say is.. This is not anything revolutionary. But what I have created is a cost-effective way for small business and event organizers to manage their events easily and securely. Even the most non-tech savvy user will also be able to manage any type of event with ease using this EMS.
