@@ -95,6 +95,16 @@ My project has 5 basic objectives.
 4. Ability to change and add what things can be stored regarding each event.
 
 5. Make the Python based interface more focused on UI.
+## Installation
+Please make sure you have **MySQL** installed before trying out
+### Windows
+Download and run the *[ems_main_windows](https://github.com/SourceCodeReYT/Event-Management-System/releases/download/V1/ems_main_windows.exe)* file
+### macOS
+Download and run the *[ems_main_mac](https://github.com/SourceCodeReYT/Event-Management-System/releases/download/V1/ems_main_mac)* file
+### Linux
+- Download the *[ems_main_linux](https://github.com/SourceCodeReYT/Event-Management-System/releases/download/V1/ems_main_linux)* file
+- Open the terminal and navigate to the folder where the file is downloaded (generally the Downloads folder, so `cd Downloads`)
+- Enter this command: `./ems_main_linux`
 ## **_Conclusion_**
 
 In the end, all I would like to say is.. This is not anything revolutionary. But what I have created is a cost-effective way for small business and event organizers to manage their events easily and securely. Even the most non-tech savvy user will also be able to manage any type of event with ease using this EMS.
